@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\BlogController;
+use App\Models\Blog;
 
 class BlogController extends Controller
 {
@@ -11,8 +13,10 @@ class BlogController extends Controller
      * 
      * @return view
      */
-    public function showList()
+    public function showList ()
     {
         return view('blog.list');
     }
+
+
 }

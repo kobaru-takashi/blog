@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','BlogController@showList')->name('blogs');
+Route::get('/blog', [BlogController::class, 'showList'])->name('blogs');
+
+
